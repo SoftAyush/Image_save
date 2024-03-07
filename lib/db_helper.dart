@@ -25,7 +25,8 @@ class DBHelper {
     await db.execute('''
       CREATE TABLE IF NOT EXISTS images (
         id INTEGER PRIMARY KEY,
-        imageUrl TEXT
+        imageUrl TEXT,
+        name TEXT
       )
     ''');
   }
